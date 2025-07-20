@@ -26,7 +26,7 @@ const OrderForm: React.FC = () => {
     const { register, handleSubmit, watch, setValue, formState: { errors } } = methods;
     const selectedCardId = watch("cardId");
 
-    const onSubmit = (data: any) => {
+    const onSubmit = (data: OrderFormValues) => {
         alert("주문이 완료되었습니다!\n" + JSON.stringify(data, null, 2));
     };
 
